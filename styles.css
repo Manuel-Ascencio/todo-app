@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-image: url(imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.date{
+    padding: 10px;
+    position: relative;
+    top: 35px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr;
+    font-size: 1.6rem;
+    color: #fff;
+    align-items: center;
+}
+#dayNum{
+    font-size: 4.5rem;
+    color: #ffff00 ;
+}
+.container{
+    top: -15px;
+    position: relative;
+    background-color: #fff;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.container form{
+    display: grid;
+    grid-template-columns: auto 32px auto;
+    gap: 10px;
+    top: 10px;
+}
+.container input,button{
+    border: none;
+    background-color: #d0d0d0;
+    border-radius: 3px;
+    font-weight: bold;
+    outline: none;
+}
+input[type="text"]{
+    padding-left: 10px;
+}
+.container button{
+    font-size: .7rem;
+    opacity: .5;
+}
+.container .add{
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: .5;
+}
+.container .active{
+    opacity: 1;
+}
+.container button:nth-child(2){
+    cursor: pointer;
+    background-color: #00206d;
+    color: #fff;
+}
+.container button:nth-child(3){
+    background-color: #00206d;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.task{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+#tasksContainer .check{
+    margin: 15px 30px;
+}
+#tasksContainer .delete{
+    cursor: pointer;
+    background-color: #fff;
+    margin: 15px 30px;
+}
+#tasksContainer{
+    top: -15px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+@media only screen and (min-width: 540px){
+    input[type="text"]{
+        font-size: 1rem;
+    }
+    .date{
+        width: 90%;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+    .container{
+        width: 90%;
+    }
+    .container form{
+        grid-template-columns: 1fr 38px auto;
+    }
+    .container button{
+        font-size: .8rem;
+        padding: 3px 10px;
+    }
+    .task{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 760px){
+    .date{
+        width: 80%;
+        font-size: 1.7rem;
+    }
+    #dayNum{
+        font-size: 4.8rem;
+    }
+    .container{
+        width: 80%;
+    }
+    .container button{
+        font-size: .9rem;
+        padding: 3px 10px;
+    }
+    .task{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 950px){
+    .date{
+        width: 75%;
+        font-size: 1.9rem;
+    }
+    #dayNum{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .container{
+        width: 75%;
+    }
+    .container form{
+        grid-template-columns: 4fr 40px auto;
+    }
+    .container button{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .task{
+        width: 75%;
+        font-size: 1.4rem;
+    }
+    input[type="text"]{
+        font-size: 1rem;
+    }
+}
