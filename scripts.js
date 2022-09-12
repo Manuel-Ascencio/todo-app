@@ -73,7 +73,7 @@ const showTasks = () => {
         <input type="checkbox" class="check">
         <p class="description">${input}</p>
         <button class="delete" onclick="removeTask('${input}')">
-            <img src="imagenes/svg/delete.svg" alt="" width="20px" class="remove">
+            <img src="images/svg/delete.svg" alt="" width="20px" class="remove">
         </button>
         </div>
         `;
