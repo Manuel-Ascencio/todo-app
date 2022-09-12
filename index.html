@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imagenes/img.png">
-    <title>Lista de tareas</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagenes/img.png" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="date">
-            <p id="dayNum"></p>
-            <div>
-                <p id="month"></p>
-                <p id="year"></p>
-            </div>
-            <p id="day"></p>
+      <div class="date">
+        <p id="dayNum"></p>
+        <div>
+          <p id="month"></p>
+          <p id="year"></p>
         </div>
+        <p id="day"></p>
+      </div>
     </header>
     <div class="container">
-        <form onsubmit="addTask(event)">
-            <input type="text" placeholder="Añade una nueva tarea" autocomplete="off" id="textInput">
-            <button class="add">+</button>
-            <button type="button" class="remove">Eliminar todo</button>
-        </form>
+      <form onsubmit="addTask(event)">
+        <input
+          type="text"
+          placeholder="Add a new task"
+          autocomplete="off"
+          class="input_De_texto otro"
+          id="textInput"
+        />
+        <button class="add">+</button>
+        <button type="button" class="remove">Delete all</button>
+      </form>
     </div>
-    <section id="tasksContainer">
-    </section>
+    <section id="tasksContainer"></section>
     <script src="./scripts.js"></script>
-</body>
+  </body>
 </html>
